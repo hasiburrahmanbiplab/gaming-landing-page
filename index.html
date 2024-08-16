@@ -32,6 +32,7 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+    
 
         </style>
 </head>
@@ -125,9 +126,13 @@
                     <p class="text-base font-normal text-gray-600 py-4 py-4 text-center">A Collection of Hilarious Videos to Brighten Your Day</p>
                 </div>
                 <div class="video-content grid grid-cols-4">
-                    <div class="video-card">
-                         <div class="img">
-                            <img src="image/v-1.png" class="w-full" alt="">
+                    <div class="video-card group">
+                         <div class="img ring-2 ring-transparent group-hover:ring-pink-500 rounded-[25px] relative">
+                            <div class="overly hidden flex w-full h-full  flex flex-col gap-y-5 justify-center items-center  bg-[#00000080]  rounded-[25px] absolute left-0 top-0 ">
+                                <i class="fa-solid fa-circle-play fa-2xl text-white duration-300"></i>
+                                <span class="text-lg font-medium text-pink-600 duration-300">Watch Now</span>
+                            </div>
+                            <img src="image/v-1.png" class="w-full rounded-[25px]" alt="">
                          </div>
                          <p class="text-base font-normal text-gray-600 py-3">No Download. No Installs. Play games Instantly on Gamer.</p>
                     </div>
