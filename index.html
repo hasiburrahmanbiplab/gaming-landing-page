@@ -19,6 +19,20 @@
             margin: 0 auto;
             padding: 0 10px;
         }
+        .banner-text h1::after{
+            content: 'G.O.A.T.';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            z-index: -1;
+            background: #0000003f;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         </style>
 </head>
 <body>
@@ -48,11 +62,30 @@
     </header>
     <!-- header part end -->
     <!-- banner part start -->
-        <section id="banner" class="bg-red-200 bg-[url('./image/bg.png')] bg-no-repeat">
+        <section id="banner" class="  my-20">
         <div class="container">
-            <div class="banner-container grid grid-cols-2">
+            <div class="banner-container grid grid-cols-2 items-center">
                 <div class="banner-text">
                     <span class="text-3xl font-semibold text-indigo-950 uppercase">Play Like The</span>
+                    <h1 class="text-8xl font-bold text-transparent uppercase bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text relative my-3">G.O.A.T.</h1>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-x-2">
+                            <i class="fa-regular fa-circle-play"></i>
+                            <p class="text-base font-normal text-gray-600">1-Click instant play</p>
+                        </li>
+                        <li class="flex items-center gap-x-2">
+                            <i class="fa-solid fa-download"></i>
+                            <p class="text-base font-normal text-gray-600">No Download</p>
+                        </li>
+                        <li class="flex items-center gap-x-2">
+                            <i class="fa-solid fa-user-group fa-xs"></i>
+                            <p class="text-base font-normal text-gray-600">1000s of supported online games</p>
+                        </li>
+                    </ul>
+                    <div class="banner-btn my-5">
+                        <button class="text-base font-semibold text-white uppercase py-3 px-6 bg-pink-500 rounded-full">Sign In</button>
+                        <button class="text-base font-semibold text-white uppercase py-3 px-6 bg-cyan-400 rounded-full">Go Rogue</button>
+                    </div>
                 </div>
                 <div class="banner-image">
                     <div class="img w-11/12 mx-auto">
@@ -63,6 +96,8 @@
         </div>
      </section>
     <!-- banner part end -->
+    <!-- rgba(135, 88, 241, 1)
+    rgba(249, 72, 178, 1) -->
     
 
    
