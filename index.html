@@ -12,22 +12,28 @@
         body{
             font-family: "Work Sans", sans-serif;
         }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 0 auto;
+        }
         </style>
 </head>
 <body>
-    <header>
+    <header class="py-3 bg-[rgba(0, 0, 0, 0.05)] shadow-lg">
        <div class="container">
         <nav class="flex justify-between items-center">
             <div class="nav-logo">
                 <a href="" class="flex items-center gap-2">
                     <img src="image/logo.png" alt="">
-                    <span><span class="text-3xl text-pink-600">G</span>amer</span>
+                    <span class="text-5xl font-bold"><span class="text-pink-600">G</span>amer</span>
                 </a>
             </div>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Devolopers</a></li>
-                <li><a href="#">
+            <ul class="flex gap-x-8 items-center">
+                <li><a href="#" class="text-base font-medium text-gray-600 capitalize cursor-pointer">About Us</a></li>
+                <li><a href="#" class="text-base font-medium text-gray-600 capitalize cursor-pointer">Devolopers</a></li>
+                <li class="bg-slate-200 shadow-lg p-2"><a href="#" class="text-base font-medium text-gray-600 capitalize cursor-pointer flex gap-3 items-center">
                     Follow Us On
                     <i class="fa-brands fa-youtube"></i>
                     <i class="fa-brands fa-tiktok"></i>
